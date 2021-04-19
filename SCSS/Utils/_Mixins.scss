@@ -1,0 +1,15 @@
+@mixin btn ($colour, $padding) {
+    background-color: $colour;
+    border-radius: 25px;
+    border: none;
+    color: #fff;
+    padding: $padding;
+    font-size: 20px;
+}
+
+@mixin position-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

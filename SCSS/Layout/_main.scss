@@ -1,0 +1,44 @@
+main{
+    margin-top: 2px;
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .location{
+        background-color: $colour-gris-fonce;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about{
+        width: 100%;
+        @include position-center;
+        flex-direction: column;
+        padding-bottom: 50px;
+        background-color: $colour-gris-caire;
+            &__title{
+                text-align: center;
+                padding-top: 20px;
+                width: 70%;
+                margin: auto;
+            }
+            &__p{
+                text-align: center;
+                width: 90%;
+                font-size: 20px;
+                font-weight: 300;
+            }
+            &__button{
+                @include btn ($colour-secondary, $padding:15px 20px);
+                background:
+                    linear-gradient(
+                    to top left, 
+                    $colour-primary, $colour-secondary
+                    );
+                @include position-center;
+                font-size: 15px;
+            }
+    }
+    
+}

@@ -1,0 +1,12 @@
+.header{
+    @include position-center;
+    &__title{
+    display: flex;
+    justify-content: center;
+    font-family: "Shrikhand";
+    font-weight: 500;
+    margin: 0;
+    width: 100%;
+    box-shadow:  0 1px 6px 1px rgba(0,0,0,0.7); 
+    }   
+}

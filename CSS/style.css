@@ -1,3 +1,78 @@
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "roboto";
+  margin: 0;
+  width: 100%;
+}
 
+html {
+  margin-top: 0;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__title {
+  display: flex;
+  justify-content: center;
+  font-family: "Shrikhand";
+  font-weight: 500;
+  margin: 0;
+  width: 100%;
+  box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.7);
+}
+
+main {
+  margin-top: 2px;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.desc .location {
+  background-color: #eaeaea;
+  width: 100%;
+  text-align: center;
+}
+.desc .about {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 50px;
+  background-color: #f6f6f6;
+}
+.desc .about__title {
+  text-align: center;
+  padding-top: 20px;
+  width: 70%;
+  margin: auto;
+}
+.desc .about__p {
+  text-align: center;
+  width: 90%;
+  font-size: 20px;
+  font-weight: 300;
+}
+.desc .about__button {
+  background-color: #FF79DA;
+  border-radius: 25px;
+  border: none;
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 20px;
+  background: linear-gradient(to top left, #9356DC, #FF79DA);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
 
 /*# sourceMappingURL=style.css.map */
