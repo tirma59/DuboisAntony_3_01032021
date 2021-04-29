@@ -60,38 +60,61 @@ main{
 .fonction{
     display: flex;
     flex-direction: column;
-    background-color: aqua;
     height: 442px;
     
     &__title{
-        margin-top: 40px;
-        margin-left: 5%;
+        margin: 50px 20px;
+        font-weight: 900;
     }
     &__button{
-        flex-direction:column;
         width:100%;
-        @include position-center-element
-        
+        @include position-center-element;
+        flex-direction:column;
+        position: relative;
     }
 }
 
 .button{
-    @include position-center-element;
-    width: 85%;
+    display: flex;
+    align-items: center;
     border-radius: 20px;
     box-shadow: 1px 2px 5px $colour-gris-foncer;
     height: 72px;
-    margin-top: 20px;
+    width: 88%;
+    margin: 20px 30px;
     font-weight: bolder;
     background-color: $colour-gris-caire;
+    @for $i from 1 through 3 {
+        &:nth-child(#{$i}):before {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            content: "#{$i}";
+            font-size: 16px;
+            left: 20px;
+            width: 25px;
+            height: 25px;
+            color: white;
+            background: $colour-primary;
+            border-radius: 16px;
+        }
+    }
     &--degustation{
         background-color: lighten($color: $colour-primary, $amount: 35);
     }
     &__icon{
         color: #7e7e7e;
+        margin-left: 40px;
+        margin-right: 20px;
     }
     &__icon--degustation{
         color: $colour-primary;
+        margin-left: 40px;
+        margin-right: 20px;
+    }
+    &__p{
+        font-weight: 700;
     }
 }
 

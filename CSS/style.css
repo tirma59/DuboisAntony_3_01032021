@@ -132,41 +132,89 @@ main {
 .fonction {
   display: flex;
   flex-direction: column;
-  background-color: aqua;
   height: 442px;
 }
 .fonction__title {
-  margin-top: 40px;
-  margin-left: 5%;
+  margin: 50px 20px;
+  font-weight: 900;
 }
 .fonction__button {
-  flex-direction: column;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  position: relative;
 }
 
 .button {
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 85%;
   border-radius: 20px;
   box-shadow: 1px 2px 5px #eaeaea;
   height: 72px;
-  margin-top: 20px;
+  width: 88%;
+  margin: 20px 30px;
   font-weight: bolder;
   background-color: #f6f6f6;
+}
+.button:nth-child(1):before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  content: "1";
+  font-size: 16px;
+  left: 20px;
+  width: 25px;
+  height: 25px;
+  color: white;
+  background: #9356DC;
+  border-radius: 16px;
+}
+.button:nth-child(2):before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  content: "2";
+  font-size: 16px;
+  left: 20px;
+  width: 25px;
+  height: 25px;
+  color: white;
+  background: #9356DC;
+  border-radius: 16px;
+}
+.button:nth-child(3):before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  content: "3";
+  font-size: 16px;
+  left: 20px;
+  width: 25px;
+  height: 25px;
+  color: white;
+  background: #9356DC;
+  border-radius: 16px;
 }
 .button--degustation {
   background-color: #f2eafb;
 }
 .button__icon {
   color: #7e7e7e;
+  margin-left: 40px;
+  margin-right: 20px;
 }
 .button__icon--degustation {
   color: #9356DC;
+  margin-left: 40px;
+  margin-right: 20px;
+}
+.button__p {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */
