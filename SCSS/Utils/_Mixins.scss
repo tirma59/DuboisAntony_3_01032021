@@ -7,9 +7,14 @@
     font-size: 20px;
 }
 
-@mixin position-center{
+@mixin position-center-element{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@mixin position-center-main{
+    width: 90%;
+    margin: auto;
 }
 

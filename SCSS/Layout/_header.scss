@@ -1,5 +1,5 @@
 .header{
-    @include position-center;
+    @include position-center-element;
     &__title{
     display: flex;
     justify-content: center;
@@ -7,6 +7,6 @@
     font-weight: 500;
     margin: 0;
     width: 100%;
-    box-shadow:  0 1px 6px 1px rgba(0,0,0,0.7); 
+    margin-top: 15px;
     }   
 }

@@ -12,21 +12,40 @@
     <title>ohmyfood</title>
 </head>
 <body>
+    <div class="container">
+        <span class="loader"></span>
+    </div>
     <header class="header">
         <h1 class="header__title">ohmyfood</h1>
     </header>
     <main>
         <section class="desc">
             <div class="location">
-                <icon class="location__icon"></icon>
-                <p class="locationn-p">Paris, Belleville</p>
+                <i class="fas fa-map-marker-alt location__icon"></i>
+                <p class="location-p">Paris, Belleville</p>
             </div>
             <section class="about">
                 <h2 class="about__title">Réservez le menu qui vous convient</h2>
                 <p class="about__p">Découvrez des restaurants d'éxeption, séléctionnés par nos soins</p>
                 <button class="about__button">Explorez nos restaurants</button>
             </section>
-            
+        </section>
+        <section class="fonction">
+            <h1 class="fonction__title">Fonctionnement</h1>
+            <section class="fonction__button">
+                <div class="button">
+                    <i class="fas fa-mobile-alt  button__icon"></i>
+                    <p class="button__p">Choisissez un restaurant</p>
+                </div>
+                <div class="button">
+                    <i class="fas fa-list button__icon"></i>
+                    <p class="button__p">Composez votre menu</p>
+                </div>
+                <div class="button button--degustation">
+                    <i class="fas fa-store button__icon--degustation" ></i>
+                    <p class="button__p">Dégustez au restaurant</p>
+                </div>
+            </section>
         </section>
     </main>
     <footer>
