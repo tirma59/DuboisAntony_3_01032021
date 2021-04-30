@@ -17,4 +17,7 @@
     width: 90%;
     margin: auto;
 }
-
+@mixin title-h2{
+    margin: 50px 20px;
+    font-weight: 900;
+}

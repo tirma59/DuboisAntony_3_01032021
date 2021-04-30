@@ -52,6 +52,11 @@ html {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -215,6 +220,82 @@ main {
 }
 .button__p {
   font-weight: 700;
+}
+
+.restaurant {
+  background-color: #f6f6f6;
+  margin-top: 65px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.restaurant__title {
+  padding-bottom: 10px;
+  padding-top: 65px;
+}
+.restaurant__type {
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.164);
+  position: relative;
+}
+.restaurant__type__link {
+  cursor: pointer;
+}
+.restaurant__type__link__img {
+  position: relative;
+}
+.restaurant__type__link__img img {
+  width: 100%;
+  height: 185px;
+  object-fit: cover;
+  object-position: 10% 61%;
+}
+.restaurant__type__link__img__tag--show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 2px;
+  z-index: 10;
+  background: #99E2D0;
+  color: #278870;
+  font-size: 14px;
+  width: 81px;
+  height: 30px;
+  top: 15px;
+  right: 15px;
+}
+.restaurant__type__link__img__tag--hidden {
+  display: none;
+}
+.restaurant__type__link__desc {
+  margin: 15px;
+}
+.restaurant__type__link__desc__title {
+  margin: 0;
+}
+.restaurant__type__link__desc__city {
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-weight: 100;
+}
+.restaurant__type__heart {
+  color: black;
+  position: absolute;
+  bottom: 40px;
+  right: 25px;
+  font-size: 20px;
+}
+.restaurant__type__heart__colour--base {
+  position: relative;
+}
+.restaurant__type__heart__colour {
+  position: absolute;
+  bottom: 2px;
+  right: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
