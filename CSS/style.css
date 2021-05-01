@@ -57,6 +57,10 @@ a {
   color: black;
 }
 
+li {
+  list-style-type: none;
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -296,6 +300,34 @@ main {
   position: absolute;
   bottom: 2px;
   right: 0px;
+}
+
+.footer {
+  background-color: #353535;
+  height: 200px;
+}
+.footer h3 {
+  font-family: "Shrikhand";
+  font-weight: 500;
+  margin-left: 25px;
+  color: white;
+  padding-top: 15px;
+}
+.footer ul {
+  margin-left: -15px;
+}
+.footer ul li {
+  line-height: 25px;
+  color: white;
+  font-size: 15px;
+}
+.footer__icon {
+  font-size: 13px;
+  margin-right: 10px;
+}
+.footer__icon--hands {
+  font-size: 12px;
+  margin-right: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
