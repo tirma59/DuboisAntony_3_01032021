@@ -1,10 +1,9 @@
-@mixin btn ($colour, $padding) {
+@mixin btn ($colour, $padding ) {
     background-color: $colour;
     border-radius: 25px;
     border: none;
     color: #fff;
     padding: $padding;
-    font-size: 20px;
 }
 
 @mixin position-center-element{
@@ -20,4 +19,83 @@
 @mixin title-h2{
     margin: 50px 20px;
     font-weight: 900;
+}
+
+@mixin check {
+
+    input {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    //apparition du check sur hover en mode desktop 
+    @media (pointer: fine) {
+
+        // effect rotation + translation 
+        &:hover &__check {
+            min-width: 60px;
+            transform: translateX(0px);
+            transform-origin: right;
+            transition-duration: 500ms;
+
+            i {
+                transform: rotate(360deg * 2);
+                transition-duration: 500ms;
+            }
+        }
+    }
+
+    // apparition du check en mode mobile et desktop sur checked 
+    input:checked~&__check {
+        // effect rotation + translation 
+        min-width: 60px;
+        transform: translateX(0px);
+        transform-origin: right;
+        transition-duration: 500ms;
+
+        i {
+            transform: rotate(360deg * 2);
+            transition-duration: 500ms;
+        }
+    }
+
+    //positionnement des élément qui constituent le check
+    &__check {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background: $colour-tertiary;
+        transition-property: min-width;
+        transition-duration: 500ms;
+        min-width: 0;
+        cursor: pointer;
+        height: 74px;
+
+        //icone check
+        i {
+            z-index: 1;
+            position: absolute;
+            margin: auto;
+            top: 30px;
+            left: 25px;
+            width: 10px;
+            height: 10px;
+            font-size: 10px;
+            color: $colour-tertiary;
+            &::after {
+                z-index: -1;
+                position: absolute;
+                content: "";
+                margin: auto;
+                transform: translate(-15px, -6px);
+                width: 20px;
+                height: 20px;
+                background-color: white;
+                border-radius: 50%;
+            }
+        }
+        
+    }
+    
 }

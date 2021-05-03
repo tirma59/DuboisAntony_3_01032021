@@ -40,7 +40,7 @@ main{
             }
     .about{
         &__button{
-            @include btn ($colour-secondary, $padding:15px 20px);
+            @include btn ($colour-secondary, $padding:15px 40px);
             background:
                 linear-gradient(
                 to top left, 
