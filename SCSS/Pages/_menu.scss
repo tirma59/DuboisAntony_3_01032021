@@ -11,9 +11,52 @@
     }
 }
 .illustrate {
+    position: relative;
+    .restaurant__type__heart{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        position: absolute;
+        right: 30px;
+        bottom: -10px;
+        
+        &__check{
+            position: absolute;
+            display: block;
+            display: none;
+            color: $colour-gris-foncer;
+        }
+        &__colour{
+            font-size: 20px;
+            position: absolute;
+            bottom: 0px;
+            background-color: $colour-gris-foncer;
+            &:hover{
+                display: none;
+            }
+        }
+        &__colour--base{
+            position: absolute;
+            bottom: 0px;
+           font-size: 20px;
+            background: -webkit-gradient(linear,left top, left bottom, from($colour-primary), to($colour-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+            &:hover{
+                    background: -webkit-gradient(linear,left top, left bottom, from($colour-primary), to($colour-secondary));
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+             }
+        }
+    }
+    
+       
+     
     
 
-    &__img {
+        &__img {
         height: 240px;
         
 
@@ -24,7 +67,7 @@
         }
     }
 
-    &__title {
+        &__title {
         box-sizing: border-box;
         transform: translateY(-50px);
         width: 100%;
@@ -35,7 +78,7 @@
         margin: 0;
         font-family: "Shrikhand", Arial, sans-serif;
         font-weight: 500;
-    }
+        }
 }
 
 .menu__p{
@@ -202,3 +245,5 @@
         transform: translateY(0px);
     }
 }
+
+

@@ -237,6 +237,7 @@ main {
   padding-top: 65px;
 }
 .restaurant__type {
+  display: flex;
   background-color: white;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -244,6 +245,34 @@ main {
   overflow: hidden;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.164);
   position: relative;
+}
+.restaurant__type__heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+}
+.restaurant__type__heart__colour {
+  font-size: 20px;
+  position: absolute;
+  background-color: white;
+}
+.restaurant__type__heart__colour:hover {
+  display: none;
+}
+.restaurant__type__heart__colour--base {
+  font-size: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.restaurant__type__heart__colour--base:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .restaurant__type__link {
   cursor: pointer;
@@ -286,21 +315,6 @@ main {
   margin-bottom: 0;
   font-weight: 100;
 }
-.restaurant__type__heart {
-  color: black;
-  position: absolute;
-  bottom: 40px;
-  right: 25px;
-  font-size: 20px;
-}
-.restaurant__type__heart__colour--base {
-  position: relative;
-}
-.restaurant__type__heart__colour {
-  position: absolute;
-  bottom: 2px;
-  right: 0px;
-}
 
 .footer {
   background-color: #353535;
@@ -342,6 +356,46 @@ main {
   font-size: 20px;
 }
 
+.illustrate {
+  position: relative;
+}
+.illustrate .restaurant__type__heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  position: absolute;
+  right: 30px;
+  bottom: -10px;
+}
+.illustrate .restaurant__type__heart__check {
+  position: absolute;
+  display: block;
+  display: none;
+  color: #eaeaea;
+}
+.illustrate .restaurant__type__heart__colour {
+  font-size: 20px;
+  position: absolute;
+  bottom: 0px;
+  background-color: #eaeaea;
+}
+.illustrate .restaurant__type__heart__colour:hover {
+  display: none;
+}
+.illustrate .restaurant__type__heart__colour--base {
+  position: absolute;
+  bottom: 0px;
+  font-size: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.illustrate .restaurant__type__heart__colour--base:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .illustrate__img {
   height: 240px;
 }
