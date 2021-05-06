@@ -143,6 +143,7 @@ main{
             position: absolute;
             right: 20px;
             bottom: 30px;
+            
             &__colour{
                 font-size: 20px;
                 position: absolute;
@@ -150,6 +151,7 @@ main{
                 &:hover{
                     display: none;
                 }
+                
             }
             &__colour--base{
                font-size: 20px;

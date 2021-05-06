@@ -368,28 +368,21 @@ main {
   right: 30px;
   bottom: -10px;
 }
-.illustrate .restaurant__type__heart__check {
-  position: absolute;
-  display: block;
-  display: none;
-  color: #eaeaea;
-}
 .illustrate .restaurant__type__heart__colour {
-  font-size: 20px;
+  font-size: 22px;
   position: absolute;
-  bottom: 0px;
+  bottom: -2px;
+  right: -1px;
   background-color: #eaeaea;
 }
-.illustrate .restaurant__type__heart__colour:hover {
+.illustrate .restaurant__type__heart__colour :hover {
   display: none;
 }
 .illustrate .restaurant__type__heart__colour--base {
   position: absolute;
-  bottom: 0px;
-  font-size: 20px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  bottom: -2px;
+  right: -1px;
+  font-size: 22px;
 }
 .illustrate .restaurant__type__heart__colour--base:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
