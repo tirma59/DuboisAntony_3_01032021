@@ -29,6 +29,7 @@
     border-top: 6px solid #FF79DA;
     border-radius: 50px;
     animation: rotate 1s linear 3;
+
 }
 
 @keyframes rotate{
@@ -37,7 +38,7 @@
 }
 @keyframes chargement{
     0%{transform:translateZ(0);opacity:1}
-    100%{transform:translateZ(-1100px);opacity:0}
+    100%{transform:translateZ(-1100px);opacity:0;z-index: -200 ;}
 }*/
 body {
   display: flex;
@@ -238,6 +239,7 @@ main {
 }
 .restaurant__type {
   display: flex;
+  width: 100%;
   background-color: white;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -259,9 +261,11 @@ main {
   font-size: 20px;
   position: absolute;
   background-color: white;
+  opacity: 1;
+  transition: opacity 0.3s linear;
 }
 .restaurant__type__heart__colour:hover {
-  display: none;
+  opacity: 0;
 }
 .restaurant__type__heart__colour--base {
   font-size: 20px;
@@ -276,15 +280,16 @@ main {
 }
 .restaurant__type__link {
   cursor: pointer;
+  width: 100%;
 }
 .restaurant__type__link__img {
   position: relative;
+  width: 100%;
 }
 .restaurant__type__link__img img {
   width: 100%;
   height: 185px;
   object-fit: cover;
-  object-position: 10% 61%;
 }
 .restaurant__type__link__img__tag--show {
   display: flex;
@@ -373,18 +378,18 @@ main {
   position: absolute;
   bottom: -2px;
   right: -1px;
+  opacity: 1;
   background-color: #eaeaea;
+  transition: opacity 0.3s linear;
 }
-.illustrate .restaurant__type__heart__colour :hover {
-  display: none;
+.illustrate .restaurant__type__heart__colour:hover {
+  opacity: 0;
 }
 .illustrate .restaurant__type__heart__colour--base {
   position: absolute;
   bottom: -2px;
   right: -1px;
   font-size: 22px;
-}
-.illustrate .restaurant__type__heart__colour--base:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

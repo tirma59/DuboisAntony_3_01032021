@@ -29,6 +29,7 @@
     border-top: 6px solid #FF79DA;
     border-radius: 50px;
     animation: rotate 1s linear 3;
+    
 }
 
 @keyframes rotate{
@@ -37,5 +38,5 @@
 }
 @keyframes chargement{
     0%{transform:translateZ(0);opacity:1}
-    100%{transform:translateZ(-1100px);opacity:0}
+    100%{transform:translateZ(-1100px);opacity:0;z-index: -200 ;}
 }*/

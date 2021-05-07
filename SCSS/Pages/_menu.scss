@@ -26,10 +26,13 @@
             position: absolute;
             bottom: -2px;
             right: -1px;
+            opacity: 1;
             background-color: $colour-gris-foncer;
-            :hover{
-                display: none;
+            transition: opacity 0.3s linear;
+            &:hover{
+                opacity: 0;
             }
+            
         }
         
         &__colour--base{
@@ -37,11 +40,9 @@
             bottom: -2px;
             right: -1px;
             font-size: 22px;
-            &:hover{
-                background: -webkit-gradient(linear,left top, left bottom, from($colour-primary), to($colour-secondary));
+            background: -webkit-gradient(linear,left top, left bottom, from($colour-primary), to($colour-secondary));
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
-            }
             }
         }
     
@@ -233,5 +234,3 @@
         transform: translateY(0px);
     }
 }
-
-
