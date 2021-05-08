@@ -79,9 +79,10 @@ main{
     border-radius: 20px;
     box-shadow: 1px 2px 5px $colour-gris-foncer;
     height: 72px;
-    width: 88%;
+    width: 85%;
     margin: 20px 30px;
     font-weight: bolder;
+    position: relative;
     background-color: $colour-gris-caire;
     @for $i from 1 through 3 {
         &:nth-child(#{$i}):before {
@@ -91,7 +92,7 @@ main{
             position: absolute;
             content: "#{$i}";
             font-size: 16px;
-            left: 20px;
+            left: -15px;
             width: 25px;
             height: 25px;
             color: white;

@@ -21,128 +21,137 @@
             <div class="illustrate__img">
                 <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo du plat" />
                 <h2 class="illustrate__title">À la française</h2>
+                <div class="restaurant__type__heart">
+                    <input class="empty restaurant__type__heart__check" id="check" type="checkbox" />
+                    <label for="check">
+                        <i class="full fas fa-heart restaurant__type__heart__colour--base"></i>
+                        <i class="empty far fa-heart restaurant__type__heart__colour"></i>
+                    </label>
+                </div>
             </div>
         </section>
-        <!-- section entrée -->
-        <section class="menu">
-            <h2 class="menu__title">entrées</h2>
+        <Section class="menus">
+            <!-- section entrée -->
+            <section class="menu">
+                <h2 class="menu__title">entrées</h2>
 
-            <div class="menu__container">
-                <input type="checkbox" name="check-ordered" id="check1">
-                <div class="menu__container__element">
-                    <label class="menu__container__element__title" for="check1">Tartare de poulpe acidulé</label>
-                    <label class="menu__container__element__description" for="check1">Aux zestes d'orange</label>
+                <div class="menu__container">
+                    <input type="checkbox" name="check-ordered" id="check1">
+                    <div class="menu__container__element">
+                        <label class="menu__container__element__title" for="check1">Tartare de poulpe acidulé</label>
+                        <label class="menu__container__element__description" for="check1">Aux zestes d'orange</label>
+                    </div>
+                    <label class="menu__container__price" for="check1">25€</label>
+                    <label class="menu__container__check" for="check1">
+                        <i class="fa fa-check"></i>
+                    </label>
                 </div>
-                <label class="menu__container__price" for="check1">25€</label>
-                <label class="menu__container__check" for="check1">
-                    <i class="fa fa-check"></i>
-                </label>
-            </div>
 
-            <div class="menu__container">
-                <input type="checkbox" name="check-ordered" id="check2">
-                <div class="menu__container__element">
-                    <label class="menu__container__element__title" for="check2">Velouté de légumes d'antan</label>
-                    <label class="menu__container__element__description" for="check2">Carotte, panais, topinambour</label>
+                <div class="menu__container">
+                    <input type="checkbox" name="check-ordered" id="check2">
+                    <div class="menu__container__element">
+                        <label class="menu__container__element__title" for="check2">Velouté de légumes d'antan</label>
+                        <label class="menu__container__element__description" for="check2">Carotte, panais, topinambour</label>
+                    </div>
+                    <label class="menu__container__price" for="check2">35€</label>
+                    <label class="menu__container__check" for="check2">
+                        <i class="fa fa-check"></i>
+                    </label>
                 </div>
-                <label class="menu__container__price" for="check2">35€</label>
-                <label class="menu__container__check" for="check2">
-                    <i class="fa fa-check"></i>
-                </label>
-            </div>
 
-            <div class="menu__container">
-                <input type="checkbox" name="check-ordered" id="check3">
-                <div class="menu__container__element">
-                    <label class="menu__container__element__title" for="check3">Soupe à l'oignon</label>
-                    <label class="menu__container__element__description" for="check3">Revisitée</label>
+                <div class="menu__container">
+                    <input type="checkbox" name="check-ordered" id="check3">
+                    <div class="menu__container__element">
+                        <label class="menu__container__element__title" for="check3">Soupe à l'oignon</label>
+                        <label class="menu__container__element__description" for="check3">Revisitée</label>
+                    </div>
+                    <label class="menu__container__price" for="check3">20€</label>
+                    <label class="menu__container__check" for="check3">
+                        <i class="fa fa-check"></i>
+                    </label>
                 </div>
-                <label class="menu__container__price" for="check3">20€</label>
-                <label class="menu__container__check" for="check3">
-                    <i class="fa fa-check"></i>
-                </label>
-            </div>
 
-        </section>
-        <!-- section plats -->
-        <section class="menu">
-            <h2 class="menu__title">Plats</h2>
+            </section>
+            <!-- section plats -->
+            <section class="menu">
+                <h2 class="menu__title">Plats</h2>
 
-            <div class="menu__container">
-                <input type="checkbox" name="check-ordered" id="check4">
-                <div class="menu__container__element">
-                    <label class="menu__container__element__title" for="check4">Coquilles Saint-Jacques</label>
-                    <label class="menu__container__element__description" for="check4">Accompagnées d'une purée de panais</label>
+                <div class="menu__container">
+                    <input type="checkbox" name="check-ordered" id="check4">
+                    <div class="menu__container__element">
+                        <label class="menu__container__element__title" for="check4">Coquilles Saint-Jacques</label>
+                        <label class="menu__container__element__description" for="check4">Accompagnées d'une purée de panais</label>
+                    </div>
+                    <label class="menu__container__price" for="check4">40€</label>
+                    <label class="menu__container__check" for="check4">
+                        <i class="fa fa-check"></i>
+                    </label>
                 </div>
-                <label class="menu__container__price" for="check4">40€</label>
-                <label class="menu__container__check" for="check4">
-                    <i class="fa fa-check"></i>
-                </label>
-            </div>
 
-            <div class="menu__container">
-                <input type="checkbox" name="check-ordered" id="check5">
-                <div class="menu__container__element">
-                    <label class="menu__container__element__title" for="check5">Magret de canard</label>
-                    <label class="menu__container__element__description" for="check5">Et parmentier de pommes de terre</label>
+                <div class="menu__container">
+                    <input type="checkbox" name="check-ordered" id="check5">
+                    <div class="menu__container__element">
+                        <label class="menu__container__element__title" for="check5">Magret de canard</label>
+                        <label class="menu__container__element__description" for="check5">Et parmentier de pommes de terre</label>
+                    </div>
+                    <label class="menu__container__price" for="check5">35€</label>
+                    <label class="menu__container__check" for="check5">
+                        <i class="fa fa-check"></i>
+                    </label>
                 </div>
-                <label class="menu__container__price" for="check5">35€</label>
-                <label class="menu__container__check" for="check5">
-                    <i class="fa fa-check"></i>
-                </label>
-            </div>
-            <div class="menu__container">
-                <input type="checkbox" name="check-ordered" id="check6">
-                <div class="menu__container__element">
-                    <label class="menu__container__element__title" for="check6">Pigeonneau d’Ille-et-Vilaine</label>
-                    <label class="menu__container__element__description" for="check6">Sur son lit de gnocchis aux légumes</label>
+                <div class="menu__container">
+                    <input type="checkbox" name="check-ordered" id="check6">
+                    <div class="menu__container__element">
+                        <label class="menu__container__element__title" for="check6">Pigeonneau d’Ille-et-Vilaine</label>
+                        <label class="menu__container__element__description" for="check6">Sur son lit de gnocchis aux légumes</label>
+                    </div>
+                    <label class="menu__container__price" for="check6">44€</label>
+                    <label class="menu__container__check" for="check6">
+                        <i class="fa fa-check"></i>
+                    </label>
                 </div>
-                <label class="menu__container__price" for="check6">44€</label>
-                <label class="menu__container__check" for="check6">
-                    <i class="fa fa-check"></i>
-                </label>
-            </div>
 
-        </section>
-        <!-- section desserts -->
-        <section class="menu">
-            <h2 class="menu__title">Desserts</h2>
-            <div class="menu__container">
-                <input type="checkbox" name="check-ordered" id="check7">
-                <div class="menu__container__element">
-                    <label class="menu__container__element__title" for="check7">Pétales de violettes glacés</label>
-                    <label class="menu__container__element__description" for="check7">Et purée de noisettes</label>
+            </section>
+            <!-- section desserts -->
+            <section class="menu">
+                <h2 class="menu__title">Desserts</h2>
+                <div class="menu__container">
+                    <input type="checkbox" name="check-ordered" id="check7">
+                    <div class="menu__container__element">
+                        <label class="menu__container__element__title" for="check7">Pétales de violettes glacés</label>
+                        <label class="menu__container__element__description" for="check7">Et purée de noisettes</label>
+                    </div>
+                    <label class="menu__container__price" for="check7">18€</label>
+                    <label class="menu__container__check" for="check7">
+                        <i class="fa fa-check"></i>
+                    </label>
                 </div>
-                <label class="menu__container__price" for="check7">18€</label>
-                <label class="menu__container__check" for="check7">
-                    <i class="fa fa-check"></i>
-                </label>
-            </div>
 
-            <div class="menu__container">
-                <input type="checkbox" name="check-ordered" id="check8">
-                <div class="menu__container__element">
-                    <label class="menu__container__element__title" for="check8">Fondant au chocolat</label>
-                    <label class="menu__container__element__description" for="check8">Revisité</label>
+                <div class="menu__container">
+                    <input type="checkbox" name="check-ordered" id="check8">
+                    <div class="menu__container__element">
+                        <label class="menu__container__element__title" for="check8">Fondant au chocolat</label>
+                        <label class="menu__container__element__description" for="check8">Revisité</label>
+                    </div>
+                    <label class="menu__container__price" for="check8">22€</label>
+                    <label class="menu__container__check" for="check8">
+                        <i class="fa fa-check"></i>
+                    </label>
                 </div>
-                <label class="menu__container__price" for="check8">22€</label>
-                <label class="menu__container__check" for="check8">
-                    <i class="fa fa-check"></i>
-                </label>
-            </div>
 
-            <div class="menu__container">
-                <input type="checkbox" name="check-ordered" id="check9">
-                <div class="menu__container__element">
-                    <label class="menu__container__element__title" for="check9">Millefeuille croustillant</label>
-                    <label class="menu__container__element__description" for="check9">Myrtilles et pâte d’amande</label>
+                <div class="menu__container">
+                    <input type="checkbox" name="check-ordered" id="check9">
+                    <div class="menu__container__element">
+                        <label class="menu__container__element__title" for="check9">Millefeuille croustillant</label>
+                        <label class="menu__container__element__description" for="check9">Myrtilles et pâte d’amande</label>
+                    </div>
+                    <label class="menu__container__price" for="check9">23€</label>
+                    <label class="menu__container__check" for="check9">
+                        <i class="fa fa-check"></i>
+                    </label>
                 </div>
-                <label class="menu__container__price" for="check9">23€</label>
-                <label class="menu__container__check" for="check9">
-                    <i class="fa fa-check"></i>
-                </label>
-            </div>
-        </section>
+            </section>
+        </Section>
         <section class="order">
             <button class="order__button" type="submit">Commander</button>
         </section>
