@@ -1,21 +1,30 @@
+footer{
+    @media screen and (min-width: 640px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    background-color: #353535;
+    }
+}
 .footer{
     background-color: #353535;
     height: 200px;
+    
     h3{
         font-family:"Shrikhand";
         font-weight: 500;
-        margin-left: 25px;
+        margin-left: 20px;
         color: white;
         padding-top: 15px;
     }
-    ul{
-        margin-left: -15px;
-        li{
-            line-height: 25px;
-            color: white;
-            font-size: 15px;
-        }
+    &__container{
+        margin-left: 20px;
     }
+    &__nav{
+        color: white;
+        line-height: 30px;
+    }
+    
     &__icon{
         font-size: 13px;
         margin-right: 10px;
@@ -24,5 +33,4 @@
             margin-right: 5px;
         }
     }
-}
-
+} 

@@ -1,0 +1,116 @@
+.desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .location{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(0, $colour-gris-foncer 90%, #cecece 100% );
+        width: 100%;
+        text-align: center;
+        &__p{
+            font-weight:bold;
+        }
+        &__icon{
+            padding-right: 15px;
+        }
+    }
+
+    .about{
+        width: 100%;
+        @include position-center-element;
+        flex-direction: column;
+        padding-bottom: 50px;
+        background-color: $colour-gris-caire;
+            &__title{
+                text-align: center;
+                padding-top: 20px;
+                width: 70%;
+                margin: auto;
+            }
+            &__p{
+                text-align: center;
+                width: 90%;
+                font-size: 19px;
+                font-weight: 300;
+            }
+    .about{
+        &__button{
+            @include btn ($colour-secondary, $padding:15px 40px);
+            background:
+                linear-gradient(
+                to top left, 
+                $colour-primary, $colour-secondary
+                );
+            @include position-center-element;
+            font-size: 15px;
+            box-shadow: 2px 2px 10px rgb(0 0 0 / 50%);
+        }
+        &__button:hover{
+            box-shadow: 2px 2px 10px rgb(0 0 0 / 100%);
+        }
+    }
+    }
+    
+}
+.fonction{
+    display: flex;
+    flex-direction: column;
+    height: 442px;
+    
+    &__title{
+        @include title-h2
+    }
+    &__button{
+        width:100%;
+        @include position-center-element;
+        flex-direction:column;
+        position: relative;
+    }
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 1px 2px 5px $colour-gris-foncer;
+    height: 72px;
+    width: 85%;
+    margin: 20px 30px;
+    font-weight: bolder;
+    position: relative;
+    background-color: $colour-gris-caire;
+    @for $i from 1 through 3 {
+        &:nth-child(#{$i}):before {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            content: "#{$i}";
+            font-size: 16px;
+            left: -15px;
+            width: 25px;
+            height: 25px;
+            color: white;
+            background: $colour-primary;
+            border-radius: 16px;
+        }
+    }
+    &--degustation{
+        background-color: lighten($color: $colour-primary, $amount: 35);
+    }
+    &__icon{
+        color: #7e7e7e;
+        margin-left: 40px;
+        margin-right: 20px;
+    }
+    &__icon--degustation{
+        color: $colour-primary;
+        margin-left: 40px;
+        margin-right: 20px;
+    }
+    &__p{
+        font-weight: 700;
+    }
+}

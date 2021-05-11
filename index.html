@@ -19,7 +19,7 @@
         <h1 class="header__title">ohmyfood</h1>
     </header>
     <main>
-        <section class="desc">
+        <div class="desc">
             <div class="location">
                 <i class="fas fa-map-marker-alt location__icon"></i>
                 <p class="location-p">Paris, Belleville</p>
@@ -29,10 +29,10 @@
                 <p class="about__p">Découvrez des restaurants d'éxeption, séléctionnés par nos soins</p>
                 <button class="about__button">Explorez nos restaurants</button>
             </section>
-        </section>
+        </div>
         <section class="fonction">
             <h1 class="fonction__title">Fonctionnement</h1>
-            <section class="fonction__button">
+            <div class="fonction__button">
                 <div class="button">
                     <i class="fas fa-mobile-alt  button__icon"></i>
                     <p class="button__p">Choisissez un restaurant</p>
@@ -45,7 +45,7 @@
                     <i class="fas fa-store button__icon--degustation" ></i>
                     <p class="button__p">Dégustez au restaurant</p>
                 </div>
-            </section>
+            </div>
         </section>
         <section class="restaurant">
             <h2 class="restaurant__title">Restaurants</h2>
@@ -118,12 +118,12 @@
     <footer>
         <section class="footer">
             <h3>ohmyfood</h3>
-            <ul>
-                <a href="#"><li><i class="fas fa-utensils footer__icon"></i>Proposer un restaurant</li></a>
-                <a href="#"><li><i class="fas fa-hands-helping footer__icon--hands"></i>Decouvrir partenaire</li></a>
-                <a href="#"><li>Mentions légales</li></a>
-                <a href="mailto:antony.dubois.92@gmail.com"><li>Contact</li></a>
-            </ul>
+            <nav class="footer__container">
+                <a class="footer__nav" href="index.html"><li><i class="fas fa-utensils footer__icon"></i>Proposer un restaurant</li></a>
+                <a class="footer__nav" href="index.html"><li><i class="fas fa-hands-helping footer__icon--hands"></i>Decouvrir partenaire</li></a>
+                <a class="footer__nav" href="index.html"><li>Mentions légales</li></a>
+                <a class="footer__nav" href="mailto:antony.dubois.92@gmail.com"><li>Contact</li></a>
+            </nav>
         </section>
     </footer>
 </body>
