@@ -35,9 +35,11 @@ main{
         margin-bottom: 20px;
         border-radius: 15px;
         overflow: hidden;
-        
         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.164);
         position: relative;
+        &:hover{
+            transform: scale(1.01);
+        }
         
         @media screen and (min-width: 1024px){
             width: 45%;

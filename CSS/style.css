@@ -288,6 +288,9 @@ main {
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.164);
   position: relative;
 }
+.restaurant__type:hover {
+  transform: scale(1.01);
+}
 @media screen and (min-width: 1024px) {
   .restaurant__type {
     width: 45%;
