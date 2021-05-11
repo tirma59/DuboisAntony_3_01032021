@@ -8,7 +8,7 @@ main{
     margin-top: 65px;
     padding-left: 20px;
     padding-right: 20px;
-    @media screen and (min-width: 1024px){
+    @media screen and (min-width: 640px){
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -19,10 +19,11 @@ main{
     &__title{
         padding-bottom:10px;
         padding-top: 65px;
-    @media screen and (min-width: 1024px){
+        font-weight: 900;
+    @media screen and (min-width: 640px){
         position: absolute;
         top: -70px; 
-        font-size: 40px; 
+        font-size: 30px;
         }
 
     }
@@ -37,9 +38,7 @@ main{
         
         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.164);
         position: relative;
-        &:hover{
-            scale: 1.01;
-        }
+        
         @media screen and (min-width: 1024px){
             width: 45%;
             margin: 1%;
