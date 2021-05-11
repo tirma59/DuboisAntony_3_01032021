@@ -3,7 +3,7 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-    background-color: #353535;
+        background-color: #353535;
     }
 }
 .footer{
@@ -16,9 +16,11 @@ footer{
         margin-left: 20px;
         color: white;
         padding-top: 15px;
+        
     }
     &__container{
         margin-left: 20px;
+        
     }
     &__nav{
         color: white;
