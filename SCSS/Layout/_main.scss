@@ -40,7 +40,6 @@ main{
         &:hover{
             transform: scale(1.01);
         }
-        
         @media screen and (min-width: 1024px){
             width: 45%;
             margin: 1%;
@@ -51,34 +50,35 @@ main{
             align-items: center;
             width: 20px;
             position: absolute;
-            right: 20px;
+            right: 30px;
             bottom: 30px;
-            
+            input{
+                display: none;
+            }
             &__colour{
-                font-size: 20px;
+                font-size: 22px;
                 position: absolute;
-                background-color: white;
+                bottom: -2px;
+                right: -1px;
                 opacity: 1;
+                background-color: white;
                 transition: opacity 0.3s linear;
                 &:hover{
                     opacity: 0;
                 }
                 
             }
+            
             &__colour--base{
-               font-size: 20px;
-                background: -webkit-gradient(linear,left top, left bottom, from($colour-primary), to($colour-secondary));
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                
-                &:hover{
-                        background: -webkit-gradient(linear,left top, left bottom, from($colour-primary), to($colour-secondary));
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                        
+                position: absolute;
+                bottom: -2px;
+                right: -1px;
+                font-size: 22px;
+                background: linear-gradient( $colour-primary 0%, $colour-secondary 70%);
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
-           }
-           
+        
         }
         
         &__link{

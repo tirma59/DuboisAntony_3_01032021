@@ -61,8 +61,11 @@
                     </div>
                 </a>
                 <div class="restaurant__type__heart">
-                    <i class="full fas fa-heart restaurant__type__heart__colour--base"></i>
-                    <i class="empty far fa-heart restaurant__type__heart__colour"></i>
+                    <input class="empty restaurant__type__heart__check" id="check" type="checkbox" />
+                    <label for="check">
+                        <i class="full fas fa-heart restaurant__type__heart__colour--base"></i>
+                        <i class="empty far fa-heart restaurant__type__heart__colour"></i>
+                    </label>
                 </div>
             </article>
             <article class="restaurant__type">
@@ -116,15 +119,13 @@
         </section>
     </main>
     <footer>
-        <section class="footer">
+        <nav class="footer__container">
             <h3>ohmyfood</h3>
-            <nav class="footer__container">
-                <a class="footer__nav" href="index.html"><i class="fas fa-utensils footer__icon"></i>Proposer un restaurant</a>
-                <a class="footer__nav" href="index.html"><i class="fas fa-hands-helping footer__icon--hands"></i>Decouvrir partenaire</a>
-                <a class="footer__nav" href="index.html">Mentions légales</a>
-                <a class="footer__nav" href="mailto:antony.dubois.92@gmail.com">Contact</a>
-            </nav>
-        </section>
+            <a class="footer__nav" href="index.html"><i class="fas fa-utensils footer__icon"></i>Proposer un restaurant</a>
+            <a class="footer__nav" href="index.html"><i class="fas fa-hands-helping footer__icon--hands"></i>Decouvrir partenaire</a>
+            <a class="footer__nav" href="index.html">Mentions légales</a>
+            <a class="footer__nav" href="mailto:antony.dubois.92@gmail.com">Contact</a>
+        </nav>
     </footer>
 </body>
 </html>
