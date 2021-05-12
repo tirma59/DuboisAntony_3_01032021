@@ -327,7 +327,7 @@ main {
   right: -1px;
   font-size: 22px;
   background: linear-gradient(#9356DC 0%, #FF79DA 70%);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .restaurant__type__link {
@@ -457,7 +457,7 @@ footer .footer__icon--hands {
   right: -1px;
   font-size: 22px;
   background: linear-gradient(#9356DC 0%, #FF79DA 70%);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .illustrate__img {

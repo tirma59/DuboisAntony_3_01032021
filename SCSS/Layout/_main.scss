@@ -75,7 +75,7 @@ main{
                 right: -1px;
                 font-size: 22px;
                 background: linear-gradient( $colour-primary 0%, $colour-secondary 70%);
-                    background-clip: text;
+                    -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                 }
         
