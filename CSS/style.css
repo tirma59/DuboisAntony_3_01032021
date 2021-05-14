@@ -233,12 +233,12 @@ li {
 }
 .button__icon {
   color: #7e7e7e;
-  margin-left: 40px;
+  margin-left: 25px;
   margin-right: 20px;
 }
 .button__icon--degustation {
   color: #9356DC;
-  margin-left: 40px;
+  margin-left: 25px;
   margin-right: 20px;
 }
 .button__p {
@@ -320,6 +320,7 @@ main {
 }
 .restaurant__type__heart__colour:hover {
   opacity: 0;
+  cursor: pointer;
 }
 .restaurant__type__heart__colour--base {
   position: absolute;
@@ -402,6 +403,9 @@ footer .footer__container {
 footer .footer__nav {
   color: white;
   line-height: 30px;
+}
+footer .footer__nav:hover {
+  color: #9356DC;
 }
 footer .footer__icon {
   font-size: 13px;
