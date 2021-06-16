@@ -51,11 +51,8 @@
         min-width: 60px;
         transform: translateX(0px);
         transform-origin: right;
-        transition-duration: 500ms;
-
         i {
-            transform: rotate(360deg * 2);
-            transition-duration: 500ms;
+            transform: rotate(360deg);
         }
     }
 
@@ -66,9 +63,8 @@
         justify-content: center;
         position: relative;
         background: $colour-tertiary;
-        transition-property: min-width;
         transition-duration: 500ms;
-        min-width: 0;
+        min-width: 0px;
         cursor: pointer;
         height: 74px;
 

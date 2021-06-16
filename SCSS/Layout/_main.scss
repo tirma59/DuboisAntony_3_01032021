@@ -55,7 +55,7 @@ main{
             input{
                 display: none;
             }
-            &__colour{
+            &__colour--base{
                 font-size: 22px;
                 position: absolute;
                 bottom: -2px;
@@ -70,7 +70,7 @@ main{
                 
             }
             
-            &__colour--base{
+            &__colour{
                 position: absolute;
                 bottom: -2px;
                 right: -1px;

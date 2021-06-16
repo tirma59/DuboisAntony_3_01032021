@@ -15,7 +15,7 @@
     display: inline-block;
     border-radius: 50px;
     vertical-align: center;
-    border: 6px solid rgba($color: #9356DC, $alpha: 1);
+    border: 6px solid rgba($color: $colour-primary, $alpha: 1);
     position: relative;
     
 }
@@ -26,8 +26,8 @@
     left: -6px;
     bottom: -6px;
     right: -6px;
-    border-top: 6px solid #FF79DA;
-    border-radius: 50px;
+    border-top: 6px solid $colour-secondary;
+    border-radius: 250px;
     animation: rotate 1s linear 3;
     
 }

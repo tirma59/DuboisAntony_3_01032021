@@ -24,7 +24,7 @@
         input{
             display: none;
         }
-        &__colour{
+        &__colour--base{
             font-size: 22px;
             position: absolute;
             bottom: -2px;
@@ -38,7 +38,7 @@
             
         }
         
-        &__colour--base{
+        &__colour{
             position: absolute;
             bottom: -2px;
             right: -1px;
@@ -216,7 +216,7 @@
 
 @for $i from 2 through 5 {
     .menu__container:nth-child(#{$i}) {
-        animation: slideY-plat #{ 500ms + ($i - 1) * 250ms} cubic-bezier(0, 0.33, 0, 0.48)  backwards;
+        animation: slideY-plat #{ 500ms + ($i - 1) * 400ms} cubic-bezier(0, 0.33, 0, 0.48)  both;
     }
 
 }
@@ -230,8 +230,6 @@
         opacity: 0;
         transform: translateY(50px);
     }
-
-    
     70%{
         opacity: 0;
     }
@@ -244,10 +242,8 @@
 @keyframes slideY-plat {
     0% {
         opacity: 0;
-        transform: translateY(50px);
+        transform: translateY(200px);
     }
-
-    
     70%{
         opacity: 0;
     }
@@ -261,9 +257,6 @@
         opacity: 0;
         transform: translateY(50px);
     }
-
-    
-    
     100% {
         opacity: 1;
         transform: translateY(0px);
