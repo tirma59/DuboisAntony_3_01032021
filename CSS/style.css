@@ -140,6 +140,7 @@ a {
 }
 .desc .about .about__button:hover {
   box-shadow: 2px 2px 10px black;
+  background: linear-gradient(to top left, #985ede 0%, #ff83dd 100%);
 }
 
 .fonction {
@@ -669,6 +670,7 @@ input:checked ~ .menu__container__check i {
 }
 .order__button:hover {
   box-shadow: 2px 2px 10px black;
+  background: linear-gradient(to top left, #985ede 0%, #ff83dd 100%);
 }
 
 .menu__title {
