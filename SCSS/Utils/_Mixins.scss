@@ -28,10 +28,10 @@
         visibility: hidden;
     }
 
-    //apparition du check sur hover en mode desktop 
+     
     @media (pointer: fine) {
 
-        // effect rotation + translation 
+        
         &:hover &__check {
             min-width: 60px;
             transform: translateX(0px);
@@ -45,9 +45,9 @@
         }
     }
 
-    // apparition du check en mode mobile et desktop sur checked 
+    
     input:checked~&__check {
-        // effect rotation + translation 
+        
         min-width: 60px;
         transform: translateX(0px);
         transform-origin: right;
@@ -56,7 +56,7 @@
         }
     }
 
-    //positionnement des élément qui constituent le check
+    
     &__check {
         display: flex;
         align-items: center;
@@ -68,7 +68,7 @@
         cursor: pointer;
         height: 74px;
 
-        //icone check
+        
         i {
             z-index: 1;
             position: absolute;

@@ -117,7 +117,7 @@
         margin-left: 20px;
         margin-bottom: 11px;
 
-        // soulignage vert
+        
         &:after {
             content: "";
             position: absolute;
@@ -140,10 +140,10 @@
         cursor: pointer;
         margin: 10px;
 
-        //appel le style de la checkbox dans '_selection-effect.scss'
+        
         @include check;
 
-        min-width: 200px;//fixe la largeur minimum des éléménts du menu pour la lisibilité 
+        min-width: 200px;
 
         &__element {
             display: flex;
